@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto:wght@400&display=swap');
+
+.weddingbody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'dosis';
+    color: #080808;
+}
+
+.wedcontainer{
+    position: relative;
+    width: 100%;
+    min-width: 350px;
+    min-height: 300px;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 300%;
+    /* 300% for 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+    margin-bottom: 25px;
+}
+
+.weddingcard{
+    width: 100%;
+    min-height: 100%;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 13px;
+}
+
+.card-thumb{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 2px;
+    position: relative;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-name{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 5px 20px;
+    background: #fff;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #888;
+}
+
+.card-body{
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: 0 20px;
+    position: relative;
+    display: grid;
+}
+
+.card-body h3{
+    color: #333;
+    font-size: 1.6em;
+    margin: 0;
+}
+.card-body h5{
+    color: #888;
+    font-size: 0.8em;
+    margin: 0;
+    font-style: italic;
+}
+
+.card-body .btn{
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: auto;
+    padding: 12px;
+    background-color: #818763;
+    max-height: 50px;
+}
+
+.review{
+    font-size: 1em;
+    line-height: 30px;
+    margin: 10px 0;
+    max-height: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rating{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicators button{
+    background: none;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #888;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+button.active{
+    width: 40px;
+    border-radius: 50px;
+    background: #888;
+}
+
+@media (max-width: 800px){
+    .wedcontainer{
+        width: 50%;
+        margin: auto;
+    }
+    .weddingcard{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card-thumb{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .card-body{
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .review{
+        max-height: none;
+        margin: 10px 0;
+    }
+    .card-body .btn{
+        padding: 15px;
+        margin-bottom: 0;
+    }
+    .card-body h3{
+        margin: 15px 0 5px 0;
+}
+}

@@ -1,0 +1,107 @@
+ .main .container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+     grid-gap: 1rem;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+ }
+
+ .item {
+     height: 320px;
+     position: relative;
+     overflow: hidden;
+     border-radius: 1.4rem;
+     display: flex;
+     margin-bottom: 20px;
+     justify-content: center;
+ }
+
+ @media only screen and (max-width: 689px) {
+     .item {
+         height: auto;
+     }
+ }
+
+ .item img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .gallery {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     margin-top: 50px;
+     grid-gap: 20px;
+ }
+
+ .item:nth-last-child(1) {
+     margin-bottom: 0;
+ }
+
+ .item h3 {
+     max-width: 300px;
+     padding: 20px;
+     position: absolute;
+     background-color: #00000080;
+     color: #fff;
+     bottom: 0;
+     font-weight: 300;
+     margin: 0;
+ }
+
+ @media only screen and (min-width: 900px) {
+     .gallery {
+         grid-gap: 30px;
+     }
+ }
+
+ .details {
+     padding: 20px;
+     position: absolute;
+     color: #fff;
+     top: 0;
+     right: 0;
+     margin: 0;
+
+ }
+
+ .details .btn {
+     margin-top: 0;
+ }
+
+ .itemholder .label {
+     display: flex;
+ }
+
+ .itemholder .label .icon {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     min-width: 40px;
+     max-width: 40px;
+     height: 40px;
+     border-radius: 100%;
+     background-color: white;
+ }
+
+ .itemholder .label .info {
+     display: flex;
+     flex-direction: column;
+     margin-left: 10px;
+     color: #111;
+     white-space: pre;
+ }
+
+ .itemholder .label .info .main {
+     color: #111;
+     font: 700 16px/1.2 "Poppins", sans-serif;
+ }
+
+ .itemholder .label .info .sub {
+     margin-top: 5px;
+     color: #111;
+     font: 300 14px/1.2 "Poppins", sans-serif;
+ }

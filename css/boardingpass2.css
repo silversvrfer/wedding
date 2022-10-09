@@ -1,0 +1,384 @@
+.bpasscon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.boarding-pass {
+    height: 350px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    /*-------------------- Header --------------------*/
+    /*-------------------- Cities --------------------*/
+    /*-------------------- Infos --------------------*/
+    /*-------------------- Strap --------------------*/
+}
+
+.etkright {
+    border: 2px dashed #36475f;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    max-width: 350px;
+    min-width: 331px;
+}
+
+.etkright .tktdetails {
+    background: url(../Images/worldright.png)
+}
+
+.etkleft {
+    border: none;
+    width: 579px;
+}
+
+.etkright small {
+    display: block;
+    font-size: 11px;
+    color: #a2a9b3;
+}
+
+.etkleft small {
+    display: block;
+    font-size: 15px;
+    color: #a2a9b3;
+}
+
+.etkleft .tktdetails {
+    display: flex;
+    background: url(../Images/worldleft.png)
+}
+
+.etkleft .tktdetails .mainbarcode {
+    border-right: 1px solid #99d298;
+    width: 100px;
+    display: flex;
+}
+
+.etkleft .tktdetails .mainbarcode a {
+    margin: auto;
+}
+
+.etkleft .tktdetails .mainbarcode img {
+    height: 250px;
+}
+
+.boarding-pass strong {
+    font-size: 0.9rem;
+    display: block;
+}
+
+.boarding-pass header {
+    background: linear-gradient(to bottom, #799c79, #688668);
+    padding: 12px 20px;
+    height: 30px;
+    display: flex;
+}
+
+.etktleft header .logo {
+    float: left;
+    width: 104px;
+    height: 31px;
+}
+
+.etkright header .logo {
+    float: left;
+    width: 200px;
+    height: 31px;
+}
+
+.boarding-pass header .rsvp {
+    color: white;
+    font-size: 27px;
+    font-weight: 900;
+    text-transform: none;
+    display: flex;
+}
+
+.boarding-pass header .rsvp .plane img {
+    height: 24px;
+    width: 37px;
+    margin: 7px 5px;
+}
+
+.boarding-pass header .flight {
+    margin-left: auto;
+    color: #fff;
+    text-align: right;
+}
+
+.boarding-pass header .flight small {
+    font-size: 8px;
+    opacity: 0.8;
+    color: white;
+}
+
+.boarding-pass header .flight strong {
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+.etkleft .header .invite {
+    padding: 5px 15px;
+}
+
+.etkright .cities {
+    position: relative;
+}
+
+.etkleft .cities {
+    display: flex;
+}
+
+.boarding-pass .cities::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.etkright .cities .city {
+    padding: 20px 18px;
+    float: left;
+}
+
+.etkleft .cities .city {
+    padding: 5px 15px 10px 15px;
+    float: left;
+}
+
+.etkleft .cities .and {
+    margin: auto;
+    text-transform: none;
+}
+
+.etkleft .cities .city:nth-child(3) {
+    float: right;
+    margin-right: 25px;
+}
+
+.etkright .cities .city:nth-child(2) {
+    float: right;
+}
+
+.boarding-pass .cities .city strong {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.etkleft .cities .city strong {
+    text-transform: none;
+}
+
+.boarding-pass .cities .city small {
+    margin-bottom: 0px;
+    margin-left: 3px;
+}
+
+.boarding-pass .cities .airplane {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    top: 57%;
+    left: 45%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    40% {
+        left: 50%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 70%;
+        opacity: 0;
+    }
+}
+
+.boarding-pass .infos {
+    display: flex;
+    border-top: 1px solid #99d298;
+}
+
+.boarding-pass .infos .places,
+.boarding-pass .infos .times {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.etkright .infos .times {
+    display: grid;
+    margin: auto;
+    justify-content: center;
+}
+
+.etkright .infos .times .title {
+    font-size: 11px;
+    color: #a2a9b3;
+    margin: auto;
+}
+
+.etkright .infos .times .month {
+    font-size: 14px;
+    color: #363c44;
+    text-transform: capitalize;
+    margin: auto;
+    font-weight: 900;
+}
+
+.etkright .infos .times .number {
+    font-size: 50px;
+    line-height: 45px;
+    margin: auto;
+}
+
+.etkright .infos .times .year {
+    font-size: 13px;
+    color: #363c44;
+    text-transform: capitalize;
+    margin: auto;
+    font-weight: 900;
+}
+
+.boarding-pass .infos .places::after,
+.boarding-pass .infos .times::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.boarding-pass .infos .times strong {
+    transform: scale(0.9);
+    transform-origin: left bottom;
+}
+
+.boarding-pass .infos .places {
+    background: #ececec;
+    border-right: 1px solid #99d298;
+}
+
+.boarding-pass .infos .places small {
+    color: #97a1ad;
+}
+
+.boarding-pass .infos .places strong {
+    color: #688668;
+}
+
+.etkleft .infos .box {
+    padding: 10px 20px 10px;
+    float: left;
+}
+
+.etkleft .infos .box .places {
+    padding: 10px 15px 10px;
+    width: 33.3%;
+    float: left;
+}
+
+.etkright .infos .box {
+    padding: 10px 20px 10px;
+    float: left;
+}
+
+.boarding-pass .infos .box small {
+    font-size: 10px;
+}
+
+.boarding-pass .strap {
+    clear: both;
+    position: relative;
+    border-top: 1px solid #99d298;
+}
+
+.boarding-pass .strap::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.boarding-pass .strap .box {
+    padding: 15px;
+}
+
+.etkleft .strap .box .passenger {
+    margin: 0 15px 15px 0;
+
+}
+
+.boarding-pass .strap .box div small {
+    font-size: 10px;
+}
+
+.boarding-pass .strap .box div strong {
+    font-size: 13px;
+}
+
+.boarding-pass .strap .box .inclusions .food img {
+    width: 40px;
+}
+
+.boarding-pass .strap .box .inclusions .lounge img {
+    width: 20px;
+}
+
+.boarding-pass .strap .box .inclusions .wifi img {
+    width: 20px;
+}
+
+.boarding-pass .strap .box .ticketlogo {
+    margin-left: auto;
+}
+
+.boarding-pass .strap .box .ticketlogo img {
+    width: 50px;
+}
+
+.boarding-pass .strap .box sup {
+    font-size: 8px;
+    position: relative;
+    top: -5px;
+}
+
+.boarding-pass .strap .qrcode {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.boarding-pass .strap .barcode {
+    margin: auto;
+}
+
+.boarding-pass .strap .barcode img {
+    width: 250px;
+}
+
+@media (max-width: 600px) {
+    .etkleft {
+        display: none;
+    }
+
+    .boarding-pass .cities .city strong {
+        font-size: 2rem;
+    }
+
+    .boarding-pass strong {
+        font-size: 0.6rem;
+    }
+}
+
+@media (min-width:601px) and (max-width:928px) {
+    .etkright {
+        display: none;
+    }
+}

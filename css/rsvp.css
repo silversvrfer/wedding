@@ -1,0 +1,292 @@
+.form-elements {
+    background: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+    border-radius: 5px;
+    max-width: 300px;
+    padding: 25px;
+}
+
+.form-elements .form-gradient {
+    background: linear-gradient(to bottom right, #C3d0b3, #8d9680);
+    padding: 5px;
+}
+
+.form-elements .form-box {
+    padding: 0 20px 20px 20px;
+    background: white;
+    display: none;
+}
+
+.form-elements .content-head {
+    color: #a8b699;
+    font: 400 4rem "Ms Madi", cursive;
+}
+
+.form-elements .form-input {
+    padding: 0.3em;
+    background: #F5F5F5;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+.form-elements input:invalid {
+    background: #F5F5F5;
+}
+
+.form-elements input:focus {
+    background: white;
+    outline: none;
+}
+
+.form-elements input {
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1em;
+    height: 1.8rem;
+    padding: 8px;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+
+}
+
+.form-elements input::placeholder {
+    font-style: italic;
+    color: black;
+    opacity: 20%;
+}
+
+.form-elements textarea {
+    width: 100%;
+    background: white;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    border: none;
+    resize: vertical;
+    padding: 8px;
+    min-height: 71px;
+    font: 300 0.8em "Poppins", sans-serif;
+}
+
+.form-elements textarea:focus {
+    outline: none;
+}
+
+.form-elements textarea::placeholder {
+    font-style: italic;
+    color: black;
+    opacity: 20%;
+}
+
+.form-elements button {
+    width: auto;
+    font-size: 1em;
+    background: #a8b699;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.form-elements button:hover {
+    cursor: pointer;
+}
+
+.form-elements .rsvpsubmit {
+    width: auto;
+    font-size: 1em;
+    background: #a8b699;
+    border: none;
+    border-radius: 0;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    height: auto;
+}
+
+.form-elements .rsvpsubmit:disabled {
+    font-size: 1em;
+    background: #f4f4f4;
+    color: #ccc;
+    pointer-events: none;
+
+}
+
+.form-elements .rsvpsubmit:hover {
+    cursor: pointer;
+}
+
+
+.okmsg {
+    display: none;
+    background: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+    border-radius: 5px;
+    width: 300px;
+    padding: 20px
+}
+
+.okmsg button {
+    width: auto;
+    font-size: 1em;
+    background: #a8b699;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+.okmsg button:hover {
+    cursor: pointer;
+}
+
+.okmsg .content-head {
+    color: #a8b699;
+    font: 400 4rem "Ms Madi", cursive;
+}
+
+.okmsg .sub-content-head {
+    color: #333;
+    font: 300 1rem "Poppins", sans-serif;
+    margin: 20px 0;
+}
+
+.okmsg .form-gradient {
+    background: linear-gradient(to bottom right, #C3d0b3, #8d9680);
+    padding: 5px;
+}
+
+.okmsg .form-box {
+    padding: 20px;
+    background: white;
+}
+
+.form-elements input::-webkit-outer-spin-button,
+.form-elements input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.form-elements input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+.loader {
+    display: none;
+    width: 100%;
+    background: white;
+    padding: 50px 0;
+}
+
+.loader svg {
+    width: 50px;
+    height: 50px;
+}
+
+/*
+Set the color of the icon
+*/
+svg path,
+svg rect {
+    fill: #8d9680;
+}
+
+.form-elements .pw-box {
+    background: white;
+    padding: 0 30px 30px 30px;
+}
+
+.form-elements .pw-box .button {
+    width: auto;
+    font-size: 1em;
+    background: #a8b699;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.form-elements .pw-box .box {
+    text-align: center;
+}
+
+.form-elements .content-body {
+    margin: 1em 0.4em 0.4em;
+    font-size: 0.8em;
+}
+
+.form-elements .form-radio .content-body {
+    text-align: left;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+
+.form-elements .form-radio {
+    background-color: white;
+    font-size: 0.8em;
+}
+
+.form-elements .form-radio label {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+}
+
+.form-elements .form-radio input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.form-elements .form-radio input:checked + span {
+    background-color: #C3d0b3;
+    color: white;
+}
+
+.form-elements .form-radio input:checked + span:before {
+    box-shadow: inset 0 0 0 0.4375em #8d9680;
+    color: white;
+}
+
+.form-elements .form-radio span {
+    display: flex;
+    align-items: center;
+    padding: 0.3em 0.5em 0.3em 0.3em;
+    border-radius: 99em;
+    transition: 0.25s ease;
+}
+
+.form-elements .form-radio span:hover {
+    background-color: #C3d0b3;
+    color: white;
+}
+
+.form-elements .form-radio span:before {
+    display: flex;
+    flex-shrink: 0;
+    content: "";
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    margin-right: 0.375em;
+    transition: 0.25s ease;
+    box-shadow: inset 0 0 0 0.125em #8d9680;
+}

@@ -1,0 +1,18 @@
+ .neon::before {
+	 content: '#14andBeyond';
+	 text-shadow: 0 0 5px #eea9e3, 0 0 15px #eea9e3, 0 0 25px #eea9e3, 0 0 35px #eea9e3, 0 0 50px #d157a7, 0 0 75px #d157a7, 0 0 100px #d157a7, 0 0 150px #d157a7;
+	 animation: flicker 1.5s infinite alternate;
+}
+ .neon::after {
+	 transform: rotateX(180deg) translateY(82%);
+	 filter: blur(3px) opacity(50%);
+}
+ @keyframes flicker {
+	 0%, 16%, 18%, 21%, 23%, 54%, 56%, 100% {
+		 text-shadow: 0 0 5px #eea9e3, 0 0 15px #eea9e3, 0 0 25px #eea9e3, 0 0 35px #eea9e3, 0 0 50px #d157a7, 0 0 75px #d157a7, 0 0 100px #d157a7, 0 0 150px #d157a7;
+	}
+	 17%, 22%, 55% {
+		 text-shadow: 0 0 5px #eea9e3, 0 0 5px #eea9e3, 0 0 5px #eea9e3, 0 0 15px #eea9e3, 0 0 30px #d157a7, 0 0 45px #d157a7, 0 0 75px #d157a7, 0 0 125px #d157a7;
+	}
+}
+ 

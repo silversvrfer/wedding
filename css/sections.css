@@ -1,0 +1,146 @@
+*{
+	font-family: "Quicksand", sans-serif;
+	color: #ddd;
+}
+*:active, *:focus{
+	outline: none;
+}
+
+html, body{
+	height: 100%;
+}
+body{
+	margin: 0 auto;
+	background: #ddd;
+    background-image:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/paperboard-texture_95678-72.jpg");
+}
+
+.scrollAnim{
+	height: 100%;
+	opacity: 1;
+	transition: 0.8s;
+	display: block;
+	padding: 30px 120px;
+}
+.scrollAnim:nth-child(2){
+    background:;
+}
+.scrollAnim:nth-child(4){
+	background:;
+}
+.scrollAnim .content{
+	margin: auto;
+}
+.scrollAnim.anim{
+	opacity: 1;
+}
+h1.anim-left, h2.anim-left{
+	display: block;
+	color: #555;
+	font-size: 3em;
+	font-weight: bold;
+	margin: 0;
+	line-height: 1.2em;
+	transition: all 0.8s;
+	font-family: "Anton", sans-serif;
+    opacity: 0;
+}
+
+.anim h2, .anim p, .anim .line{
+    opacity: 1;
+}
+.anim h1, .anim h2{
+	transition-delay: 0.1s;
+}
+
+p{
+	font-size: 1em;
+	transition: all 1.2s;
+    color: #555;
+    margin-bottom: 30px;
+    opacity: 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.weddingcard p{
+    opacity: 1;
+}
+.anim-top{
+	transform: translate(0,150px);
+}
+.anim-left{
+	transform: translate(-100px,0);
+}
+.anim .anim-top{
+	transform: translate(0,0);
+}
+.anim .anim-left{
+	transform: translate(0,0);	
+  animation: fadeIn 0.1s;
+  -webkit-animation: fadeIn 0.1s;
+  -moz-animation: fadeIn 0.1s;
+  -o-animation: fadeIn 0.1s;
+  -ms-animation: fadeIn 0.1s;
+}
+
+.steps{
+	width: 100%;
+	margin: auto;
+}
+
+button{
+	color: #333;
+	background-color: #eee;
+	border: none;
+	padding: 0.5em;
+	width: 9em;
+	margin: 0.2em;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+button:hover{
+	background-color: #ddd;
+}
+
+
+
+@keyframes fadeIn {
+	from{ 
+		opacity:  0; 
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes fadeInOut {
+	0%{ 
+		opacity:  0; 
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+ @media screen and (max-width: 760px) {
+    .scrollAnim{
+         padding: 50px 20px;
+     }
+     .first{
+         padding: 0px 20px;
+     }
+}
+
+.line {
+	 height: 1px;
+	 background: #555;
+	 display: block;
+	 transition: 1s;
+     margin: 5px 0 30px 0;
+    opacity: 0;
+}

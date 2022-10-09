@@ -1,0 +1,115 @@
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.topbar .logo {
+    margin: 0 10px;
+}
+
+.topbar .logotop img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+
+}
+
+.topbar .logomobile img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+
+}
+
+nav.topbar {
+    position: fixed;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+nav.topbar ul {
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
+}
+
+.topbar.black ul {
+    background: #E9E8E2;
+}
+
+nav.topbar ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav.topbar ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    font: 900 1rem 'Open Sans', arial, sans-serif;
+}
+
+.topbar .menu-icon {
+    width: 100%;
+    background: #E9E8E2;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    color: #111;
+    display: none;
+}
+
+@media(max-width:779px) {
+    .topbar .logotop {
+        display: none;
+    }
+
+    nav.topbar ul {
+        max-height: 0px;
+        background: #E9E8E2;
+    }
+
+    .topbar.black ul {
+        background: #E9E8E2;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+    }
+
+    .topbar .showing {
+        max-height: 600px;
+        height: auto;
+    }
+
+    nav.topbar ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .topbar .menu-icon {
+        display: block;
+    }
+
+    .mainbody {
+        overflow-x: hidden;
+    }
+
+    nav.topbar {
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+    }
+}
+
+.topbar .menu-icon .burger {
+    position: absolute;
+    right: 35px;
+    top: 22px;
+}
