@@ -34,6 +34,7 @@
     border-radius: 1.4rem;
 }
 
+
 @media only screen and (max-width: 600px) {
     .maingrid {
         display: grid;
@@ -41,3 +42,85 @@
         grid-gap: 1rem;
     }
 }
+
+/*Prenup tiles*/
+
+.prenupimg .tile0 {
+    background-image: url(../Images/prenup/0.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile1 {
+    background-image: url(../Images/prenup/1.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile2 {
+    background-image: url(../Images/prenup/2.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile3 {
+    background-image: url(../Images/prenup/3.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile4 {
+    background-image: url(../Images/prenup/4.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile5 {
+    background-image: url(../Images/prenup/5.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile6 {
+    background-image: url(../Images/prenup/6.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile7 {
+    background-image: url(../Images/prenup/7.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile8 {
+    background-image: url(../Images/prenup/8.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile9 {
+    background-image: url(../Images/prenup/9.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile10 {
+    background-image: url(../Images/prenup/10.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile11 {
+    background-image: url(../Images/prenup/11.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.prenupimg .tile12 {
+    background-image: url(../Images/prenup/12.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+/*end of prenup tiles*/
