@@ -106,6 +106,10 @@ nav.home {
     display: none;
 }
 
+.home ul li a:hover {
+    opacity: 1;
+}
+
 .home ul li a:hover:after {
     width: 100%;
     left: 0;
@@ -157,6 +161,17 @@ nav.home {
     margin: 1rem 0 0 0;
     background-color: transparent;
     border-radius: 2px;
+}
+
+.content-section .mobile-header {
+    font: 700 1.2rem 'Open Sans', arial, sans-serif;
+    border-top: 3px solid rgba(0, 0, 0, .15);
+    -webkit-background-clip: padding-box;
+    /* for Safari */
+    background-clip: padding-box;
+    /* for IE9+, Firefox 4+, Opera, Chrome */
+    padding: 1rem 0;
+    display: none;
 }
 
 .banner p {
@@ -289,6 +304,7 @@ footer {
     background-position: 0 0;
     cursor: pointer;
     animation: fave-heart 1.5s steps(18);
+    margin: auto 0;
 }
 
 .heart:hover {
