@@ -73,7 +73,7 @@ nav.home {
     color: #111;
     text-decoration: none;
     text-transform: uppercase;
-    font: 900 12px/1.4 'Open Sans', arial, sans-serif;
+    font: 700 12px/1.4 'Open Sans', arial, sans-serif;
     width: fit-content;
     max-width: 100px;
     opacity: 0.3;
@@ -217,7 +217,7 @@ footer {
 }
 
 .section1 {
-    background-image: url(../Images/coverphoto.jpg);
+    background-image: url(../Images/coverphoto2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -330,11 +330,11 @@ footer {
     }
 
     .topheader {
-        margin: 65px 0 0 0;
+        margin: 70px 0 0 0;
     }
 
     .galleryview {
-        margin: 80px 0 0 0;
+        margin: 60px 0 0 0;
     }
 
     .content-section {
@@ -347,4 +347,8 @@ footer {
     .topheader {
         margin-top: 100px;
     }
+}
+
+.fancybox-caption__body {
+    display: none;
 }
