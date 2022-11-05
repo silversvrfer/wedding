@@ -52,10 +52,51 @@ nav.topbar ul li {
 }
 
 nav.topbar ul li a {
+    display: block;
     text-decoration: none;
     color: #111;
     font-size: 20px;
-    font: 900 1rem 'Open Sans', arial, sans-serif;
+    font: 700 1rem 'Open Sans', arial, sans-serif;
+    transition: all 0.2s ease;
+    opacity: 0.3;
+}
+
+nav.topbar ul li a.current {
+    font: 800 1.2rem 'Open Sans', arial, sans-serif;
+    opacity: 1;
+}
+
+nav.topbar ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+nav.topbar ul li a.fake:after {
+    display: none;
+}
+
+nav.topbar ul li a:hover {
+    opacity: 1;
+}
+
+nav.topbar ul li a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #FF1847;
+}
+
+nav.topbar ul li a.current:after {
+    width: 100%;
+    left: 0;
+    font-size: 14px;
+    transition: 0.5s;
+    background: #FF1847;
 }
 
 .topbar .menu-icon {
@@ -63,12 +104,18 @@ nav.topbar ul li a {
     background: #E9E8E2;
     text-align: center;
     box-sizing: border-box;
-    padding: 15px 40px;
+    padding: 10px 40px;
+    /*padding: 15px 40px; for the burger icon menu*/
     color: #111;
     display: none;
 }
 
+
 @media(max-width:779px) {
+    .content-section .mobile-header {
+        display: block;
+    }
+
     .topbar .logotop {
         display: none;
     }
@@ -76,6 +123,8 @@ nav.topbar ul li a {
     nav.topbar ul {
         max-height: 0px;
         background: #E9E8E2;
+        display: none;
+        /*remove diplay:none if you want UL list to show when clicking burger icon*/
     }
 
     .topbar.black ul {
@@ -112,4 +161,6 @@ nav.topbar ul li a {
     position: absolute;
     right: 35px;
     top: 22px;
+    display: none;
+    /*remove diplay:none to show burger icon*/
 }
