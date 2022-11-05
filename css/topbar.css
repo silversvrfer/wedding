@@ -48,7 +48,6 @@ nav.topbar ul {
 
 nav.topbar ul li {
     display: inline-block;
-    padding: 20px;
 }
 
 nav.topbar ul li a {
@@ -59,6 +58,7 @@ nav.topbar ul li a {
     font: 700 1rem 'Open Sans', arial, sans-serif;
     transition: all 0.2s ease;
     opacity: 0.3;
+    margin: 20px;
 }
 
 nav.topbar ul li a.current {
@@ -99,17 +99,68 @@ nav.topbar ul li a.current:after {
     background: #FF1847;
 }
 
+nav.topbar ul li a.fakemobile {
+    opacity: 1;
+    padding-right: 20px;
+    border-right: 3px solid rgba(0, 0, 0, .15);
+}
+
+nav.topbar ul li a.fakemobile p {
+    margin: 0;
+}
+
+nav.topbar ul li a.fakemobile:hover:after {
+    background: none;
+}
+
 .topbar .menu-icon {
     width: 100%;
     background: #E9E8E2;
     text-align: center;
     box-sizing: border-box;
-    padding: 10px 40px;
+    padding: 0 40px;
     /*padding: 15px 40px; for the burger icon menu*/
     color: #111;
     display: none;
 }
 
+.topbar li.firstli {
+    margin-right: 0;
+}
+
+.topbar .menu-icon li a {
+    font: 700 1rem 'Open Sans', arial, sans-serif;
+    opacity: 1;
+    text-decoration: none;
+    color: #111;
+    margin: 20px;
+}
+
+.topbar li.lastli a {
+    margin-right: 0;
+}
+
+
+.topbar .menu-icon ul {
+    display: flex;
+}
+
+.topbar .menu-icon .menulist-mob.main li a {
+    display: none;
+    transition: 5s;
+}
+
+.topbar .menu-icon .menulist-mob.main li a.current {
+    display: block;
+    transition: 5s;
+}
+
+nav.topbar li a.fakemobile {
+    opacity: 1;
+    padding-right: 20px;
+    margin-right: 0;
+    border-right: 3px solid rgba(0, 0, 0, .15);
+}
 
 @media(max-width:779px) {
     .content-section .mobile-header {
@@ -120,39 +171,45 @@ nav.topbar ul li a.current:after {
         display: none;
     }
 
-    nav.topbar ul {
+    .topbar.main ul,
+    .topbar .menu ul {
         max-height: 0px;
         background: #E9E8E2;
-        display: none;
+        width: 180px;
+        margin: 2px 0 0 auto;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
         /*remove diplay:none if you want UL list to show when clicking burger icon*/
     }
 
     .topbar.black ul {
         background: #E9E8E2;
-        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
     }
 
-    .topbar .showing {
+    .topbar.main .showing {
         max-height: 600px;
         height: auto;
+        width: 180px;
+        margin: 2px 0 0 auto;
+        box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
     }
 
     nav.topbar ul li {
         box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
         text-align: center;
+        min-width: 90px;
     }
 
     .topbar .menu-icon {
-        display: block;
+        display: flex;
+        justify-content: center;
+        list-style: none;
     }
 
     .mainbody {
         overflow-x: hidden;
     }
 
-    nav.topbar {
+    nav.topbar .menu-icon {
         box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
     }
 }
@@ -161,6 +218,5 @@ nav.topbar ul li a.current:after {
     position: absolute;
     right: 35px;
     top: 22px;
-    display: none;
     /*remove diplay:none to show burger icon*/
 }
