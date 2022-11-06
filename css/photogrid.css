@@ -24,6 +24,7 @@
 }
 
 .maingrid .tileimg img {
+    background: url(../Images/thumbnail.webp) no-repeat;
     display: block;
     position: absolute;
     top: 0;
