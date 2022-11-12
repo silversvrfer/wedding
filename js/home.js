@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
 function checkPswd() {
-    var confirmPassword = "admin";
+    var confirmPassword = "@rjrsvp2022";
     var password = document.getElementById("pswd").value;
     if (password == confirmPassword) {
         document.getElementsByClassName('pw-box')[0].style.display = 'none';
