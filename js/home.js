@@ -121,3 +121,19 @@ document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener("orientationChange", lazyload);
     }
 })
+
+$(document).ready(function () {
+    $('#menushow').click(function () {
+        $(this).siblings('.info').slideToggle();
+        $('#menuhide').toggleClass("show", 2000);
+        $(this).toggleClass("hide", 2000);
+
+        /*$('header').fadeIn();*/
+    });
+    $('#menuhide').click(function () {
+        $(this).siblings('.info').slideToggle();
+        $('#menushow').toggleClass("hide", 2000);
+        $(this).toggleClass("show", 2000);
+        /*$('header').fadeIn();*/
+    });
+});
