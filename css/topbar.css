@@ -162,7 +162,7 @@ nav.topbar li a.fakemobile {
     border-right: 3px solid rgba(0, 0, 0, .15);
 }
 
-@media(max-width:932px) {
+@media(max-width:941px) {
     .content-section .mobile-header {
         display: block;
     }
