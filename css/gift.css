@@ -1,0 +1,184 @@
+#giftcard h1,
+#giftcard h2,
+#giftcard h3 {
+    font-family: 'Arimo', sans-serif;
+    margin: 0;
+    font-weight: 400;
+}
+
+#giftcard h1 {
+    margin: auto;
+    color: #545454;
+    margin: 20px 0;
+    font: 400 3em/1.2 'Ephesis', cursive;
+}
+
+#giftcard h2 {
+    color: #545454;
+    font: 400 1.4em/1.2 'Ephesis', cursive;
+}
+
+#giftcard h3 {
+    font-size: 1em;
+    margin: 0.5em auto;
+}
+
+
+.giftclass {
+    height: 450px;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 3px rgb(0 0 0 / 24%);
+    padding: 20px;
+    background-color: white;
+}
+
+#giftcard {
+    position: relative;
+}
+
+#giftcard .splash {
+    text-align: center;
+    padding: 15px;
+}
+
+#giftcard .splash p {
+    font-size: 14px;
+    margin: 2em 0;
+}
+
+#giftcard .screenbox {
+    /*background: linear-gradient(to bottom right, #C3d0b3, #8d9680);*/
+    padding: 5px;
+    max-height: 440px;
+    height: 100%;
+}
+
+#giftcard .screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#giftcard .menu {
+    width: 100%;
+    background-color: #f4f5f5;
+}
+
+#giftcard .menu-item {
+    padding: 0.5em;
+    text-align: center;
+}
+
+#giftcard #menuhide {
+    display: none;
+}
+
+#giftcard #menuhide.show {
+    display: block;
+}
+
+#giftcard #menushow.hide {
+    display: none;
+}
+
+#giftcard #qrbox {
+    position: absolute;
+    max-width: 270px;
+    bottom: 25px;
+    width: 100%;
+    background-color: white;
+}
+
+#giftcard .menu-item span {
+    color: #545454;
+    font-size: 0.8em;
+    position: relative;
+}
+
+#giftcard .menu-item:hover {
+    cursor: pointer;
+}
+
+#giftcard .section {
+    border: 1px solid #ccc;
+}
+
+#giftcard .section:first-child {
+    border-top: 1px solid #ccc;
+}
+
+#giftcard .info {
+    display: none;
+    height: 240px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#giftcard .info p {
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 10px;
+    ;
+}
+
+#giftcard .info span {
+    color: #545454;
+    font-size: 0.75em;
+}
+
+#giftcard .splash svg {
+    max-width: 80px;
+    display: block;
+    margin: auto;
+}
+
+#giftcard .splash svg .st0 {
+    fill: #3D3D3D;
+}
+
+#giftcard .splash svg .st1 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: #8f9779;
+}
+
+#giftcard .splash svg .st2 {
+    fill: #e0c2a5;
+}
+
+#giftcard .splash svg .st3 {
+    fill: #8f9779;
+}
+
+#giftcard #gift {
+    animation: gift 1.5s ease-in-out infinite;
+}
+
+@keyframes gift {
+    0% {
+        transform: rotate(0);
+    }
+
+    2.5% {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+    5% {
+        transform: rotate(0) scale(1.1);
+    }
+
+    7.5% {
+        transform: rotate(5deg) scale(1.1);
+    }
+
+    10% {
+        transform: rotate(0) scale(1);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
